@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake Arcade</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./game.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Snake<span>.</span></h1>
+      <dl>
+        <div><dt>Score</dt><dd id="score">0</dd></div>
+        <div><dt>Best</dt><dd id="best">0</dd></div>
+      </dl>
+    </header>
+    <div class="arena">
+      <canvas id="board" width="600" height="600" aria-label="Snake game board"></canvas>
+      <div id="overlay">
+        <p id="status" role="status">Ready to play?</p>
+        <button id="play" type="button">Start game</button>
+      </div>
+    </div>
+    <div class="toolbar">
+      <p>Move with arrows or WASD. Space pauses.</p>
+      <button id="pause" type="button" disabled>Pause</button>
+    </div>
+    <div class="directions" aria-label="Touch controls">
+      <button type="button" data-direction="up">Up</button>
+      <button type="button" data-direction="left">Left</button>
+      <button type="button" data-direction="down">Down</button>
+      <button type="button" data-direction="right">Right</button>
+    </div>
+  </main>
+</body>
+</html>
